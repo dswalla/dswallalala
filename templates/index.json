@@ -20,17 +20,52 @@
           "settings": {
             "collection": ""
           }
+        },
+        "ad6341fb-dbb7-4b34-b4d8-07fd40efbb28": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "70a4cb01-d690-408b-8c5e-4535ab5e15e2": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "1d03652b-d253-482f-ad47-ba81b06414e2": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false
+          }
+        },
+        "62101a64-44ff-4e49-82a2-e061ccfa11d2": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false
+          }
+        },
+        "72d33c1f-4009-4dc5-9de5-514d65c4bdab": {
+          "type": "image",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "collection-0",
         "collection-1",
-        "collection-2"
+        "collection-2",
+        "ad6341fb-dbb7-4b34-b4d8-07fd40efbb28",
+        "70a4cb01-d690-408b-8c5e-4535ab5e15e2",
+        "1d03652b-d253-482f-ad47-ba81b06414e2",
+        "62101a64-44ff-4e49-82a2-e061ccfa11d2",
+        "72d33c1f-4009-4dc5-9de5-514d65c4bdab"
       ],
       "settings": {
         "heading": "",
         "heading_size": "h2",
-        "desktop_layout": "left",
         "mobile_layout": "column",
         "card_styles": "product-card-wrapper",
         "color_scheme": "background-1",
