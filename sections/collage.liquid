@@ -26,7 +26,7 @@
     <div class="collage{% if section.settings.mobile_layout == 'collage' %} collage--mobile{% endif %}">
       {%- for block in section.blocks -%}
         <div
-          class="collage__item collage__item--{{ block.type }} collage__item--{{ section.settings.desktop_layout }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          class="collage__item collage__item--{{ block.type }} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           {{ block.shopify_attributes }}
           {% if settings.animations_reveal_on_scroll %}
             data-cascade
@@ -281,22 +281,6 @@
     },
     {
       "type": "select",
-      "id": "desktop_layout",
-      "options": [
-        {
-          "value": "left",
-          "label": "t:sections.collage.settings.desktop_layout.options__1.label"
-        },
-        {
-          "value": "right",
-          "label": "t:sections.collage.settings.desktop_layout.options__2.label"
-        }
-      ],
-      "default": "left",
-      "label": "t:sections.collage.settings.desktop_layout.label"
-    },
-    {
-      "type": "select",
       "id": "mobile_layout",
       "options": [
         {
@@ -428,7 +412,7 @@
       ]
     }
   ],
-  "max_blocks": 3,
+  "max_blocks": 20,
   "presets": [
     {
       "name": "t:sections.collage.presets.name",
