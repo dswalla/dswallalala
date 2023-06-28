@@ -199,7 +199,7 @@
               </p>
             {%- endif -%}
 
-            {% render 'price', product: card_product, price_class: '' %}
+            {% comment %}{% render 'price', product: card_product, price_class: '' %}{% endcomment %}
           </div>
         </div>
         {%- if show_quick_add -%}
@@ -316,23 +316,6 @@
             {%- endif -%}
           </div>
         {%- endif -%}
-        <div class="card__badge {{ settings.badge_position }}">
-          {%- if card_product.available == false -%}
-            <span
-              id="Badge-{{ section_id }}-{{ card_product.id }}"
-              class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}"
-            >
-              {{- 'products.product.sold_out' | t -}}
-            </span>
-          {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
-            <span
-              id="Badge-{{ section_id }}-{{ card_product.id }}"
-              class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
-            >
-              {{- 'products.product.on_sale' | t -}}
-            </span>
-          {%- endif -%}
-        </div>
       </div>
     </div>
   </div>
@@ -362,11 +345,11 @@
           {%- endif -%}
         </div>
       </div>
-      <div class="card__content">
+      <!-- <div class="card__content">
         <div class="card__information">
           <h3 class="card__heading card__heading--placeholder{% if settings.card_style == 'standard' %} h5{% endif %}">
             <a role="link" aria-disabled="true" class="full-unstyled-link">
-              {{ 'onboarding.product_title' | t }}
+              {% comment %}{{ 'onboarding.product_title' | t }}{% endcomment %}
             </a>
           </h3>
           <div class="card-information">
@@ -374,10 +357,10 @@
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
               <div class="caption-with-letter-spacing light">{{ 'products.product.vendor' | t }}</div>
             {%- endif -%}
-            {% render 'price' %}
+            {% comment %}{% render 'price' %}{% endcomment %}
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 {%- endif -%}
